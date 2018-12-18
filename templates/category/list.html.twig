@@ -1,0 +1,33 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Categories{% endblock %}
+
+{% block body %}
+    {% if categories %}
+        <table id="categories" class="table table-striped">
+            <caption>Categories</caption>
+            <thead>
+            <tr>
+                <th>Name</th>
+                <th>Actions</th>
+            </tr>
+            </thead>
+            <tbody>
+            {% for category in categories %}
+                <tr>
+                    <td>{{ category.name }}</td>
+                    <td>
+
+                        <a href="{{ path('category-read',  {'id': category.id}) }}" class="btn btn-dark">Details</a>
+                        <a href="{{ path('category-edit',  {'id': category.id}) }}" class="btn btn-light">Edit</a>
+                        <a href="{{ path('category-delete', {'id': category.id })}}" class="btn btn-danger delete-article" data-id="{{ category.id }}">Delete</a>
+                    </td>
+                </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+    {% else %}
+        <h1>No category to show</h1>
+    {% endif %}
+    <a class="btn btn-primary" href="{{ path('category-create') }}">Create new category</a>
+{% endblock %}

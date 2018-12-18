@@ -1,0 +1,29 @@
+{% extends 'base.html.twig' %}
+{% block title %}
+    {{ product.name }}
+{% endblock %}
+
+{% block body %}
+    <table class="table table-bordered">
+        <caption> {{ product.name }} </caption>
+        <tr>
+            <th scope="row">Description</th>
+            <td>{{ product.description }}</td>
+        </tr>
+        <tr>
+            <th scope="row">Price</th>
+            <td>{{ product.price }}</td>
+        </tr>
+        <tr>
+            <th scope="row">Category</th>
+            <td>{{ product.categoryName }}</td>
+        </tr>
+    </table>
+
+    <hr>
+
+    <a class="btn btn-primary" href="{{ path('product-create') }}">Create new category</a>
+    <a class="btn btn-primary" href="{{ path('product-list') }}">Go Back</a>
+{% endblock %}
+
+

@@ -1,0 +1,15 @@
+// the ~ allows you to reference things in node_modules
+@import "~bootstrap/scss/bootstrap";
+
+body {
+  padding-top: 5rem;
+}
+
+
+
+caption {
+  font-weight: bold;
+  text-align: left;
+  caption-side: top;
+
+}

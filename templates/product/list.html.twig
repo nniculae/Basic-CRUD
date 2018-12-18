@@ -1,0 +1,37 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Products{% endblock %}
+
+{% block body %}
+    {% if products %}
+        <table id="products" class="table table-striped">
+            <caption>Products</caption>
+            <thead>
+            <tr>
+                <th>Name</th>
+                <th>Actions</th>
+            </tr>
+            </thead>
+            <tbody>
+            {% for product in products %}
+                <tr>
+                    <td>{{ product.name }}</td>
+                    <td>
+
+                        <a href="{{ path('product-read',  {'id': product.id}) }}" class="btn btn-dark">Details</a>
+                        <a href="{{ path('product-edit',  {'id': product.id}) }}" class="btn btn-light">Edit</a>
+                        <a href="{{ path('product-delete', {'id': product.id}) }}" class="btn btn-danger">Delete</a>
+                    </td>
+                </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+    {% else %}
+        <h1>No articles to show</h1>
+    {% endif %}
+    <hr>
+    <a href="{{ path('product-create') }}">Create new product</a>
+{% endblock %}
+
+
+{#   TODO: paginate. Use https://github.com/KnpLabs/KnpPaginatorBundle #}
