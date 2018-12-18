@@ -4,15 +4,30 @@
 namespace App\Util;
 
 
+use Doctrine\ORM\Mapping as ORM;
+
 class Dinosaurus
 {
 
-    private $length = 0;
     /**
-     * Dinosaurus constructor.
+     * @ORM\Column(type="integer")
+     */private $length = 0;
+    /**
+     * @var string
+     * @ORM\Column(type="string")
      */
-    public function __construct()
+    private $genus;
+    /**
+     * @var bool
+     * @ORM\Column(type="boolean")
+     */
+    private $isCarnivor;
+
+
+    public function __construct(string $genus = 'unknown', bool $isCarnivor = false)
     {
+        $this->genus = $genus;
+        $this->isCarnivor = $isCarnivor;
     }
 
     public function getLength()
@@ -24,4 +39,14 @@ class Dinosaurus
     {
         $this->length = $len;
     }
+
+    public function getSpecification()
+    {
+        return sprintf('The %s %scarnivourous dino is %d meter long',
+            $this->genus,
+            $this->isCarnivor ? '' : 'non-',
+            $this->length);
+    }
+
+
 }
