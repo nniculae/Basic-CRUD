@@ -6,8 +6,9 @@ namespace App\Util;
 
 use Doctrine\ORM\Mapping as ORM;
 
-class Dinosaurus
+class Dinosaur
 {
+    const LARGE = 20;
 
     /**
      * @ORM\Column(type="integer")
@@ -46,6 +47,16 @@ class Dinosaurus
             $this->genus,
             $this->isCarnivor ? '' : 'non-',
             $this->length);
+    }
+
+    public function getGenus()
+    {
+        return $this->genus;
+    }
+
+    public function isCarnivorous()
+    {
+        return $this->isCarnivor;
     }
 
 

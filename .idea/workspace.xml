@@ -22,25 +22,28 @@
     <session id="-1689339753">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="7" />
+          <entry key="project.closed" value="8" />
           <entry key="project.open.time.48" value="1" />
           <entry key="project.open.time.54" value="1" />
           <entry key="project.open.time.55" value="1" />
           <entry key="project.open.time.61" value="1" />
+          <entry key="project.open.time.62" value="1" />
           <entry key="project.open.time.64" value="1" />
           <entry key="project.open.time.72" value="1" />
           <entry key="project.open.time.76" value="1" />
-          <entry key="project.opened" value="7" />
+          <entry key="project.open.time.79" value="1" />
+          <entry key="project.opened" value="9" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="css" value="20" />
           <entry key="env" value="9" />
+          <entry key="gitignore" value="4" />
           <entry key="html" value="8" />
           <entry key="js" value="151" />
           <entry key="md" value="4" />
-          <entry key="php" value="4394" />
+          <entry key="php" value="5833" />
           <entry key="scss" value="52" />
           <entry key="ts" value="18" />
           <entry key="twig" value="1806" />
@@ -55,8 +58,8 @@
           <entry key="HTML" value="8" />
           <entry key="JavaScript" value="151" />
           <entry key="Markdown" value="4" />
-          <entry key="PHP" value="4394" />
-          <entry key="PLAIN_TEXT" value="20" />
+          <entry key="PHP" value="5833" />
+          <entry key="PLAIN_TEXT" value="24" />
           <entry key="SCSS" value="52" />
           <entry key="Twig" value="1806" />
           <entry key="TypeScript" value="18" />
@@ -69,12 +72,13 @@
           <entry key="css" value="4" />
           <entry key="dist" value="1" />
           <entry key="env" value="1" />
+          <entry key="gitignore" value="1" />
           <entry key="html" value="1" />
           <entry key="js" value="15" />
           <entry key="json" value="6" />
           <entry key="lock" value="1" />
           <entry key="md" value="1" />
-          <entry key="php" value="100" />
+          <entry key="php" value="102" />
           <entry key="scss" value="5" />
           <entry key="show-one-category" value="1" />
           <entry key="ts" value="1" />
@@ -90,8 +94,8 @@
           <entry key="JSON" value="6" />
           <entry key="JavaScript" value="15" />
           <entry key="Markdown" value="1" />
-          <entry key="PHP" value="100" />
-          <entry key="PLAIN_TEXT" value="3" />
+          <entry key="PHP" value="102" />
+          <entry key="PLAIN_TEXT" value="4" />
           <entry key="SCSS" value="5" />
           <entry key="Twig" value="63" />
           <entry key="TypeScript" value="1" />
@@ -106,16 +110,16 @@
       </usages-collector>
       <usages-collector id="statistics.php.new.test">
         <counts>
-          <entry key="source.empty" value="3" />
+          <entry key="source.empty" value="4" />
           <entry key="with.framework.PHPUnit" value="1" />
-          <entry key="with.framework.PHPUnit 6+.without.selected.methods" value="1" />
+          <entry key="with.framework.PHPUnit 6+.without.selected.methods" value="2" />
           <entry key="with.framework.PHPUnit.without.selected.methods" value="1" />
-          <entry key="without.target.element" value="3" />
+          <entry key="without.target.element" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.php.new.class">
         <counts>
-          <entry key="PHP Class.type" value="3" />
+          <entry key="PHP Class.type" value="4" />
         </counts>
       </usages-collector>
     </session>
@@ -123,22 +127,31 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tests/Util/DinosaurusTest.php">
+        <entry file="file://$PROJECT_DIR$/src/Util/Dinosaur.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="547">
-              <caret line="47" lean-forward="true" selection-start-line="47" selection-end-line="47" />
-              <folding>
-                <element signature="e#114#138#0#PHP" expanded="true" />
-              </folding>
+            <state relative-caret-position="-60">
+              <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Util/Dinosaurus.php">
+        <entry file="file://$PROJECT_DIR$/tests/Factory/DinosaurFactoryTest.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="215">
-              <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
+            <state relative-caret-position="665">
+              <caret line="82" column="47" lean-forward="true" selection-start-line="82" selection-start-column="13" selection-end-line="82" selection-end-column="47" />
+              <folding>
+                <element signature="e#118#150#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Factory/DinosaurFactory.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="490">
+              <caret line="35" column="17" selection-start-line="35" selection-start-column="17" selection-end-line="35" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -164,10 +177,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/Entity/Task.php" />
-        <option value="$PROJECT_DIR$/templates/default/new.html.twig" />
-        <option value="$PROJECT_DIR$/src/Controller/DefaultController.php" />
-        <option value="$PROJECT_DIR$/src/Form/TaskType.php" />
         <option value="$PROJECT_DIR$/.env" />
         <option value="$PROJECT_DIR$/config/packages/twig.yaml" />
         <option value="$PROJECT_DIR$/assets/js/app.js" />
@@ -214,7 +223,11 @@
         <option value="$PROJECT_DIR$/templates/product/update.html.twig" />
         <option value="$PROJECT_DIR$/steps.md" />
         <option value="$PROJECT_DIR$/tests/Util/DinosaurusTest.php" />
+        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/src/Util/Dinosaurus.php" />
+        <option value="$PROJECT_DIR$/src/Util/Dinosaur.php" />
+        <option value="$PROJECT_DIR$/src/Factory/DinosaurFactory.php" />
+        <option value="$PROJECT_DIR$/tests/Factory/DinosaurFactoryTest.php" />
       </list>
     </option>
   </component>
@@ -350,6 +363,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -360,26 +374,30 @@
             <path>
               <item name="symfoart" type="b2602c69:ProjectViewProjectNode" />
               <item name="symfoart" type="462c0819:PsiDirectoryNode" />
-              <item name="tests" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="symfoart" type="b2602c69:ProjectViewProjectNode" />
+              <item name="symfoart" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Util" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="symfoart" type="b2602c69:ProjectViewProjectNode" />
               <item name="symfoart" type="462c0819:PsiDirectoryNode" />
               <item name="tests" type="462c0819:PsiDirectoryNode" />
-              <item name="Util" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="com.jetbrains.php.phpunit.codeGeneration.PhpNewTestDialog.defaultLibrary" value="PHPUnit 6+" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/Util" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/Factory" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -414,6 +432,10 @@
       <TestRunner class="App\Tests\Util\CalculatorTest" file="$PROJECT_DIR$/tests/Util/CalculatorTest.php" scope="Class" />
       <method v="2" />
     </configuration>
+    <configuration name="DinosaurFactoryTest.testItGrowsAVelociraptor" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="App\Tests\Factory\DinosaurFactoryTest" file="$PROJECT_DIR$/tests/Factory/DinosaurFactoryTest.php" method="testItGrowsAVelociraptor" scope="Method" />
+      <method v="2" />
+    </configuration>
     <configuration name="tests" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
       <TestRunner directory="$PROJECT_DIR$/tests" />
       <method v="2" />
@@ -421,10 +443,12 @@
     <list>
       <item itemvalue="PHPUnit.CalculatorTest" />
       <item itemvalue="PHPUnit.tests" />
+      <item itemvalue="PHPUnit.DinosaurFactoryTest.testItGrowsAVelociraptor" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="PHPUnit.tests" />
+        <item itemvalue="PHPUnit.DinosaurFactoryTest.testItGrowsAVelociraptor" />
         <item itemvalue="PHPUnit.CalculatorTest" />
       </list>
     </recent_temporary>
@@ -446,54 +470,56 @@
       <workItem from="1544908131126" duration="22079000" />
       <workItem from="1544993463120" duration="17031000" />
       <workItem from="1545118105739" duration="7195000" />
+      <workItem from="1545133074036" duration="2985000" />
+      <workItem from="1545172401772" duration="8028000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="tests - 2018.12.18 at 10h 21m 58s.xml">
+    <history-entry file="tests - 2018.12.19 at 01h 36m 03s.xml">
       <configuration name="tests" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="tests - 2018.12.18 at 10h 23m 03s.xml">
+    <history-entry file="tests - 2018.12.19 at 01h 37m 21s.xml">
       <configuration name="tests" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="tests - 2018.12.18 at 10h 23m 54s.xml">
+    <history-entry file="tests - 2018.12.19 at 01h 37m 28s.xml">
       <configuration name="tests" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="tests - 2018.12.18 at 10h 24m 41s.xml">
+    <history-entry file="tests - 2018.12.19 at 01h 40m 39s.xml">
       <configuration name="tests" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="tests - 2018.12.18 at 10h 25m 24s.xml">
+    <history-entry file="tests - 2018.12.19 at 01h 42m 39s.xml">
       <configuration name="tests" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="tests - 2018.12.18 at 10h 25m 39s.xml">
+    <history-entry file="tests - 2018.12.19 at 01h 44m 19s.xml">
       <configuration name="tests" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="tests - 2018.12.18 at 10h 25m 51s.xml">
+    <history-entry file="tests - 2018.12.19 at 01h 44m 31s.xml">
       <configuration name="tests" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="tests - 2018.12.18 at 10h 25m 57s.xml">
+    <history-entry file="tests - 2018.12.19 at 01h 45m 17s.xml">
       <configuration name="tests" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="tests - 2018.12.18 at 10h 27m 07s.xml">
+    <history-entry file="tests - 2018.12.19 at 01h 51m 38s.xml">
       <configuration name="tests" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
-    <history-entry file="tests - 2018.12.18 at 10h 27m 31s.xml">
+    <history-entry file="tests - 2018.12.19 at 01h 52m 15s.xml">
       <configuration name="tests" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="74792000" />
+    <option name="totallyTimeSpent" value="85805000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17293233" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.054779805" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32924107" />
-      <window_info anchor="bottom" id="Debug" order="2" weight="0.4" />
+      <window_info anchor="bottom" id="Debug" order="2" weight="0.39955357" />
       <window_info anchor="bottom" id="Cvs" order="3" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="4" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="5" />
@@ -508,7 +534,7 @@
       <window_info anchor="right" id="Ant Build" order="2" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="3" weight="0.25" />
       <window_info anchor="right" id="Database" order="4" />
-      <window_info anchor="right" id="Run" order="5" sideWeight="0.49888393" weight="0.21052632" />
+      <window_info active="true" anchor="right" id="Run" order="5" sideWeight="0.49888393" visible="true" weight="0.2593985" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -518,27 +544,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/vendor/doctrine/doctrine-fixtures-bundle/ORMFixtureInterface.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="9" column="10" selection-start-line="9" selection-start-column="10" selection-end-line="9" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/doctrine/data-fixtures/lib/Doctrine/Common/DataFixtures/SharedFixtureInterface.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="21" column="24" selection-start-line="21" selection-start-column="24" selection-end-line="21" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/doctrine/data-fixtures/lib/Doctrine/Common/DataFixtures/AbstractFixture.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="325">
-          <caret line="13" column="50" selection-start-line="13" selection-start-column="50" selection-end-line="13" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/vendor/doctrine/doctrine-fixtures-bundle/Fixture.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="350">
@@ -706,9 +711,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
           <caret line="9" column="4" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="78" />
-          <folding>
-            <element signature="e#12#26#0#Twig" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -740,10 +742,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="500">
           <caret line="86" column="5" lean-forward="true" selection-start-line="58" selection-start-column="4" selection-end-line="86" selection-end-column="5" />
-          <folding>
-            <element signature="e#34#58#0#PHP" expanded="true" />
-            <element signature="e#2356#2371#1#PHP" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -758,14 +756,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="140">
           <caret line="91" column="51" selection-start-line="91" selection-start-column="51" selection-end-line="91" selection-end-column="51" />
-          <folding>
-            <element signature="e#34#57#0#PHP" expanded="true" />
-            <element signature="e#1178#1204#0#PHP" expanded="true" />
-            <element signature="e#1678#1702#0#PHP" expanded="true" />
-            <element signature="e#3075#3090#1#PHP" expanded="true" />
-            <element signature="e#2587#2613#0#PHP" expanded="true" />
-            <element signature="e#2282#2296#1#PHP" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -811,9 +801,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="475">
           <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
-          <folding>
-            <element signature="e#72#96#0#PHP" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -828,11 +815,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="440">
           <caret line="26" column="20" lean-forward="true" selection-start-line="26" selection-start-column="20" selection-end-line="26" selection-end-column="20" />
-          <folding>
-            <element signature="e#548#560#0#Twig" expanded="true" />
-            <element signature="e#663#675#0#Twig" expanded="true" />
-            <element signature="e#776#790#0#Twig" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -840,10 +822,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="275">
           <caret line="11" column="14" lean-forward="true" selection-start-line="11" selection-start-column="14" selection-end-line="11" selection-end-column="14" />
-          <folding>
-            <element signature="e#12#26#0#Twig" expanded="true" />
-            <element signature="e#233#245#0#Twig" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -868,26 +846,47 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="250">
           <caret line="10" column="78" selection-start-line="10" selection-start-column="78" selection-end-line="10" selection-end-column="78" />
-          <folding>
-            <element signature="e#12#26#0#Twig" expanded="true" />
-          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="550">
+          <caret line="22" selection-start-line="22" selection-end-line="22" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/tests/Util/DinosaurusTest.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="547">
-          <caret line="47" lean-forward="true" selection-start-line="47" selection-end-line="47" />
+        <state relative-caret-position="250">
+          <caret line="15" column="39" lean-forward="true" selection-start-line="15" selection-start-column="39" selection-end-line="15" selection-end-column="39" />
           <folding>
             <element signature="e#114#138#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Util/Dinosaurus.php">
+    <entry file="file://$PROJECT_DIR$/src/Util/Dinosaur.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="215">
-          <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
+        <state relative-caret-position="-60">
+          <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Factory/DinosaurFactory.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="490">
+          <caret line="35" column="17" selection-start-line="35" selection-start-column="17" selection-end-line="35" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/Factory/DinosaurFactoryTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="665">
+          <caret line="82" column="47" lean-forward="true" selection-start-line="82" selection-start-column="13" selection-end-line="82" selection-end-column="47" />
+          <folding>
+            <element signature="e#118#150#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -8,7 +8,7 @@
 
 namespace App\Tests\Util;
 
-use App\Util\Dinosaurus;
+use App\Util\Dinosaur;
 use PHPUnit\Framework\TestCase;
 
 class DinosaurusTest extends TestCase
@@ -16,7 +16,7 @@ class DinosaurusTest extends TestCase
     public function testSettingLength()
     {
 
-        $dinosaurus = new Dinosaurus();
+        $dinosaurus = new Dinosaur();
         $this->assertSame(0, $dinosaurus->getLength());
 
         $dinosaurus->setLength(9);
@@ -26,7 +26,7 @@ class DinosaurusTest extends TestCase
 
     public function testDinosaurusNotShrunk()
     {
-        $dino = new Dinosaurus();
+        $dino = new Dinosaur();
         $dino->setLength(15);
 
         $this->assertGreaterThan(12, $dino->getLength(),
@@ -36,14 +36,14 @@ class DinosaurusTest extends TestCase
 
     public function testReturnFullSpecificationDinasaurus()
     {
-        $dino = new Dinosaurus();
+        $dino = new Dinosaur();
 
         $this->assertSame("The unknown non-carnivourous dino is 0 meter long", $dino->getSpecification());
     }
 
     public function testReturnsFullSpecificationsForTyro()
     {
-        $dino = new Dinosaurus('Tyro', true);
+        $dino = new Dinosaur('Tyro', true);
         $dino->setLength(12);
 
         $this->assertSame('The Tyro carnivourous dino is 12 meter long', $dino->getSpecification());
