@@ -45,7 +45,7 @@
           <entry key="html" value="8" />
           <entry key="js" value="151" />
           <entry key="md" value="4" />
-          <entry key="php" value="7996" />
+          <entry key="php" value="8384" />
           <entry key="scss" value="52" />
           <entry key="ts" value="18" />
           <entry key="twig" value="1806" />
@@ -60,7 +60,7 @@
           <entry key="HTML" value="8" />
           <entry key="JavaScript" value="151" />
           <entry key="Markdown" value="4" />
-          <entry key="PHP" value="7996" />
+          <entry key="PHP" value="8384" />
           <entry key="PLAIN_TEXT" value="24" />
           <entry key="SCSS" value="52" />
           <entry key="Twig" value="1806" />
@@ -80,7 +80,7 @@
           <entry key="json" value="6" />
           <entry key="lock" value="1" />
           <entry key="md" value="1" />
-          <entry key="php" value="118" />
+          <entry key="php" value="122" />
           <entry key="scss" value="5" />
           <entry key="show-one-category" value="1" />
           <entry key="ts" value="1" />
@@ -96,7 +96,7 @@
           <entry key="JSON" value="6" />
           <entry key="JavaScript" value="15" />
           <entry key="Markdown" value="1" />
-          <entry key="PHP" value="118" />
+          <entry key="PHP" value="122" />
           <entry key="PLAIN_TEXT" value="4" />
           <entry key="SCSS" value="5" />
           <entry key="Twig" value="63" />
@@ -121,7 +121,7 @@
       </usages-collector>
       <usages-collector id="statistics.php.new.class">
         <counts>
-          <entry key="PHP Class.type" value="10" />
+          <entry key="PHP Class.type" value="12" />
         </counts>
       </usages-collector>
     </session>
@@ -129,38 +129,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Util/Dinosaur.php">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tests/Factory/DinosaurFactoryTest.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-450">
-              <folding>
-                <element signature="e#118#150#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tests/EnclosureTest.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="48" column="23" selection-start-line="48" selection-start-column="23" selection-end-line="48" selection-end-column="23" />
-              <folding>
-                <element signature="e#30#55#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Factory/DinosaurFactory.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="500">
-              <caret line="40" column="31" lean-forward="true" selection-start-line="40" selection-start-column="31" selection-end-line="40" selection-end-column="31" />
+            <state relative-caret-position="375">
+              <caret line="35" column="41" selection-start-line="35" selection-start-column="20" selection-end-line="35" selection-end-column="41" />
               <folding>
                 <element signature="e#113#156#0#PHP" expanded="true" />
               </folding>
@@ -169,42 +141,36 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tests/Service/DinosaurLengthDeterminatorTest.php">
+        <entry file="file://$PROJECT_DIR$/src/Service/EnclosureBuilderService.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="325">
-              <caret line="15" column="7" lean-forward="true" selection-start-line="15" selection-start-column="7" selection-end-line="15" selection-end-column="7" />
+            <state relative-caret-position="-260">
+              <caret line="34" column="34" lean-forward="true" selection-start-line="34" selection-start-column="34" selection-end-line="34" selection-end-column="34" />
               <folding>
-                <element signature="e#39#82#0#PHP" expanded="true" />
+                <element signature="e#33#58#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/tests/Service/EnclosureBuilderServiceTest.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="690">
+              <caret line="34" column="7" lean-forward="true" selection-start-line="15" selection-start-column="5" selection-end-line="34" selection-end-column="7" />
+              <folding>
+                <element signature="e#39#64#0#PHP" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Service/DinosaurLengthDeterminator.php">
+        <entry file="file://$PROJECT_DIR$/tests/Service/DinosaurLengthDeterminatorTest.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="200">
-              <caret line="8" column="32" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="32" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Entity/Security.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="600">
-              <caret line="30" column="62" lean-forward="true" selection-start-line="30" selection-start-column="62" selection-end-line="30" selection-end-column="62" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Entity/Enclosure.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="690">
-              <caret line="83" column="40" selection-start-line="83" selection-start-column="40" selection-end-line="83" selection-end-column="40" />
+            <state relative-caret-position="265">
+              <caret line="16" column="24" selection-start-line="16" selection-start-column="24" selection-end-line="16" selection-end-column="24" />
               <folding>
-                <element signature="e#31#86#0#PHP" expanded="true" />
+                <element signature="e#39#82#0#PHP" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -231,8 +197,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/templates/guitar_player/show.html.twig" />
-        <option value="$PROJECT_DIR$/templates/guitar_player/index.html.twig" />
         <option value="$PROJECT_DIR$/src/Entity/Product.php" />
         <option value="$PROJECT_DIR$/src/Migrations/Version20181215221418.php" />
         <option value="$PROJECT_DIR$/src/DataFixtures/AppFixtures.php" />
@@ -276,12 +240,14 @@
         <option value="$PROJECT_DIR$/src/Exceptions/NotABuffetException.php" />
         <option value="$PROJECT_DIR$/src/Exceptions/DinosaursAreRunningRampantException.php" />
         <option value="$PROJECT_DIR$/src/Entity/Security.php" />
-        <option value="$PROJECT_DIR$/src/Entity/Enclosure.php" />
         <option value="$PROJECT_DIR$/tests/EnclosureTest.php" />
         <option value="$PROJECT_DIR$/src/Service/DinosaurLengthDeterminator.php" />
-        <option value="$PROJECT_DIR$/tests/Service/DinosaurLengthDeterminatorTest.php" />
         <option value="$PROJECT_DIR$/tests/Factory/DinosaurFactoryTest.php" />
         <option value="$PROJECT_DIR$/src/Factory/DinosaurFactory.php" />
+        <option value="$PROJECT_DIR$/src/Service/EnclosureBuilderService.php" />
+        <option value="$PROJECT_DIR$/src/Entity/Enclosure.php" />
+        <option value="$PROJECT_DIR$/tests/Service/DinosaurLengthDeterminatorTest.php" />
+        <option value="$PROJECT_DIR$/tests/Service/EnclosureBuilderServiceTest.php" />
       </list>
     </option>
   </component>
@@ -438,12 +404,6 @@
             <path>
               <item name="symfoart" type="b2602c69:ProjectViewProjectNode" />
               <item name="symfoart" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Service" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="symfoart" type="b2602c69:ProjectViewProjectNode" />
-              <item name="symfoart" type="462c0819:PsiDirectoryNode" />
               <item name="tests" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -539,7 +499,7 @@
       <workItem from="1545133074036" duration="2985000" />
       <workItem from="1545172401772" duration="8798000" />
       <workItem from="1545184394489" duration="445000" />
-      <workItem from="1545308394467" duration="15378000" />
+      <workItem from="1545308394467" duration="19017000" />
     </task>
     <servers />
   </component>
@@ -576,7 +536,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="102398000" />
+    <option name="totallyTimeSpent" value="106037000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -612,20 +572,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/vendor/doctrine/persistence/lib/Doctrine/Common/Persistence/ObjectManager.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="215">
-          <caret line="107" column="31" selection-start-line="107" selection-start-column="15" selection-end-line="107" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/doctrine/orm/lib/Doctrine/ORM/EntityManagerInterface.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="32" column="48" selection-start-line="32" selection-start-column="48" selection-end-line="32" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Form/ProductType.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="665">
@@ -907,46 +853,12 @@
     <entry file="file://$PROJECT_DIR$/src/Util/Dinosaur.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Entity/Security.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="600">
-          <caret line="30" column="62" lean-forward="true" selection-start-line="30" selection-start-column="62" selection-end-line="30" selection-end-column="62" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Entity/Enclosure.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="690">
-          <caret line="83" column="40" selection-start-line="83" selection-start-column="40" selection-end-line="83" selection-end-column="40" />
-          <folding>
-            <element signature="e#31#86#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tests/EnclosureTest.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
           <caret line="48" column="23" selection-start-line="48" selection-start-column="23" selection-end-line="48" selection-end-column="23" />
           <folding>
             <element signature="e#30#55#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Service/DinosaurLengthDeterminator.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="8" column="32" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/Service/DinosaurLengthDeterminatorTest.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="325">
-          <caret line="15" column="7" lean-forward="true" selection-start-line="15" selection-start-column="7" selection-end-line="15" selection-end-column="7" />
-          <folding>
-            <element signature="e#39#82#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -960,12 +872,66 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Entity/Security.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="600">
+          <caret line="30" column="62" lean-forward="true" selection-start-line="30" selection-start-column="62" selection-end-line="30" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Service/DinosaurLengthDeterminator.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="8" column="32" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Entity/Enclosure.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="78" column="21" lean-forward="true" selection-start-line="78" selection-start-column="21" selection-end-line="78" selection-end-column="21" />
+          <folding>
+            <element signature="e#31#86#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Factory/DinosaurFactory.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="500">
-          <caret line="40" column="31" lean-forward="true" selection-start-line="40" selection-start-column="31" selection-end-line="40" selection-end-column="31" />
+        <state relative-caret-position="375">
+          <caret line="35" column="41" selection-start-line="35" selection-start-column="20" selection-end-line="35" selection-end-column="41" />
           <folding>
             <element signature="e#113#156#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Service/EnclosureBuilderService.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-260">
+          <caret line="34" column="34" lean-forward="true" selection-start-line="34" selection-start-column="34" selection-end-line="34" selection-end-column="34" />
+          <folding>
+            <element signature="e#33#58#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/Service/DinosaurLengthDeterminatorTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="265">
+          <caret line="16" column="24" selection-start-line="16" selection-start-column="24" selection-end-line="16" selection-end-column="24" />
+          <folding>
+            <element signature="e#39#82#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/Service/EnclosureBuilderServiceTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="690">
+          <caret line="34" column="7" lean-forward="true" selection-start-line="15" selection-start-column="5" selection-end-line="34" selection-end-column="7" />
+          <folding>
+            <element signature="e#39#64#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>

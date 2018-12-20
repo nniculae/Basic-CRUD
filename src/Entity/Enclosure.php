@@ -79,9 +79,15 @@ class Enclosure
         return false;
     }
 
-    private function addSecurity(Security $security)
+    public function addSecurity(Security $security)
     {
         $this->securities[] = $security;
+    }
+
+    public function getSecurities():Collection
+    {
+        return $this->securities;
+
     }
 
 }
