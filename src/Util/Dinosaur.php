@@ -6,13 +6,26 @@ namespace App\Util;
 
 use Doctrine\ORM\Mapping as ORM;
 
+/**
+ * @ORM\Entity
+ * @ORM\Table(name="dinosaurs")
+ * Class Dinosaur
+ * @package App\Util
+ */
 class Dinosaur
 {
-    const LARGE = 20;
+    const LARGE = 10;
+    const HUGE = 30;
 
     /**
+     * @ORM\ManyToOne(targetEntity="App\Entity\Dinosaur", inversedBy="dinosaurs")
+     * @var
+     */
+    private $enclosure;
+    /**
      * @ORM\Column(type="integer")
-     */private $length = 0;
+     */
+    private $length = 0;
     /**
      * @var string
      * @ORM\Column(type="string")
