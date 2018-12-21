@@ -13,7 +13,7 @@ use Symfony\Component\Routing\Annotation\Route;
 class CategoryController extends AbstractController
 {
     /**
-     * @Route("/category/create-new-category", name="category-create")
+     * @Route("admin/category/create-new-category", name="category-create")
      * @param Request $request
      * @param EntityManagerInterface $entityManager
      * @return \Symfony\Component\HttpFoundation\Response
@@ -44,7 +44,7 @@ class CategoryController extends AbstractController
     }
 
     /**
-     * @Route("/category/{id}", name="category-read")
+     * @Route("/admin/category/{id}", name="category-read")
      * @param Category $category
      * @return Response
      */
@@ -57,7 +57,7 @@ class CategoryController extends AbstractController
     }
 
     /**
-     * @Route("/category/edit/{id}", name="category-edit")
+     * @Route("/admin/category/edit/{id}", name="category-edit")
      * @param Request $request
      * @param EntityManagerInterface $entityManager
      * @param int $id
@@ -87,7 +87,7 @@ class CategoryController extends AbstractController
     }
 
     /**
-     * @Route("/category/delete/{id}", name="category-delete", methods={"GET", "DELETE"})
+     * @Route("/admin/category/delete/{id}", name="category-delete", methods={"GET", "DELETE"})
      * @param EntityManagerInterface $entityManager
      * @param $id
      * @return \Symfony\Component\HttpFoundation\RedirectResponse
@@ -101,7 +101,7 @@ class CategoryController extends AbstractController
     }
 
     /**
-     * @Route("/category", name="category-list")
+     * @Route("/admin/category", name="category-list")
      * @param EntityManagerInterface $entityManager
      * @return Response
      */
