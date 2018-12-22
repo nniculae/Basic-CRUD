@@ -11,11 +11,21 @@
         <ini name="error_reporting" value="-1" />
         <env name="APP_ENV" value="test" />
         <env name="SHELL_VERBOSITY" value="-1" />
+        <!-- ###+ doctrine/doctrine-bundle ### -->
+        <env name="DATABASE_URL" value="sqlite:///data/database_test.sqlite"/>
+        <env name="APP_DEBUG" value="1"/>
+        <env name="APP_SECRET" value="5a79a1c866efef9ca1800f971d689f3e"/>
+        <!--<env name="SYMFONY_DEPRECATIONS_HELPER" value="/.*/" />-->
+        <env name="SYMFONY_DEPRECATIONS_HELPER" value="disabled" />
+
     </php>
 
     <testsuites>
-        <testsuite name="Project Test Suite">
-            <directory>tests</directory>
+        <testsuite name="Functional">
+            <directory>tests/Controller</directory>
+        </testsuite>
+        <testsuite name="Unit">
+            <directory>tests/Util</directory>
         </testsuite>
     </testsuites>
 
@@ -26,6 +36,7 @@
     </filter>
 
     <listeners>
-        <listener class="Symfony\Bridge\PhpUnit\SymfonyTestsListener" />
+        <!--<listener class="Symfony\Bridge\PhpUnit\SymfonyTestsListener" />-->
+        <listener class="\DAMA\DoctrineTestBundle\PHPUnit\PHPUnitListener" />
     </listeners>
 </phpunit>

@@ -1,10 +1,11 @@
 <?php
 
-namespace App\Controller;
+namespace App\Controller\Admin;
 
 use App\Entity\Category;
 use App\Form\CategoryType;
 use Doctrine\ORM\EntityManagerInterface;
+use Sensio\Bundle\FrameworkExtraBundle\Configuration\IsGranted;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
@@ -13,7 +14,8 @@ use Symfony\Component\Routing\Annotation\Route;
 class CategoryController extends AbstractController
 {
     /**
-     * @Route("admin/category/create-new-category", name="category-create")
+     * @IsGranted("ROLE_ADMIN")
+     * @Route("admin/category/new", name="category-create")
      * @param Request $request
      * @param EntityManagerInterface $entityManager
      * @return \Symfony\Component\HttpFoundation\Response
@@ -94,7 +96,8 @@ class CategoryController extends AbstractController
      */
     public function delete(EntityManagerInterface $entityManager, $id):Response
     {
-        $article = $this->getDoctrine()->getRepository(Category::class)->find($id);
+
+        $article = $entityManager->getRepository(Category::class)->find($id);
         $entityManager->remove($article);
         $entityManager->flush();
         return $this->redirectToRoute('category-list');

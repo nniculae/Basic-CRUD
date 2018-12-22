@@ -29,8 +29,15 @@ class UserFixture extends Fixture
         $user->setPassword($this->passwordEncoder->encodePassword($user, 'parola-nicu'));
         $user->setEmail('niculae@zeelandnet.nl');
         $user->setRoles(['ROLE_ADMIN']);
-
         $manager->persist($user);
+
+
+        $user2 = new User();
+        $user2->setPassword($this->passwordEncoder->encodePassword($user, 'pisoi'));
+        $user2->setEmail('pisi@zeelandnet.nl');
+        $user2->setRoles(['ROLE_USER']);
+        $manager->persist($user2);
+
         $manager->flush();
 
 
