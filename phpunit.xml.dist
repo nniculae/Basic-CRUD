@@ -27,6 +27,9 @@
         <testsuite name="Unit">
             <directory>tests/Util</directory>
         </testsuite>
+        <testsuite name="Repository">
+            <directory>tests/Repository</directory>
+        </testsuite>
     </testsuites>
 
     <filter>

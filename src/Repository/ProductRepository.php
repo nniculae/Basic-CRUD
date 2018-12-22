@@ -14,7 +14,7 @@ use Symfony\Bridge\Doctrine\RegistryInterface;
  */
 class ProductRepository extends ServiceEntityRepository
 {
-    
+
     public function findByWithJoin($id):array
     {
 
@@ -40,13 +40,25 @@ class ProductRepository extends ServiceEntityRepository
 //            ->innerJoin('p.category', 'cat')
 //            ->addSelect('cat')
 //            ->setParameter('id', $id)
-//            ->getQuery()
-//            ->getOneOrNullResult();
-//    }
+    /**
+     * @param string $categoryName
+     * @return Product[] Returns an array of Product objects
+     */
+    public function searchByCategoryName(string $categoryName):array
+    {
+        return $this->createQueryBuilder('p')
+            ->select('p.name', 'p.description', 'p.price','cat.name as categoryName')
+            ->andWhere('cat.name = :categoryName')
+            ->innerJoin('p.category', 'cat')
+            ->setParameter('categoryName', $categoryName)
+            ->getQuery()
+            ->getResult();
+    }
 
     // /**
     //  * @return Product[] Returns an array of Product objects
     //  */
+
     /*
     public function findByExampleField($value)
     {
@@ -60,9 +72,8 @@ class ProductRepository extends ServiceEntityRepository
         ;
     }
     */
-
     /*
-    public function findOneBySomeField($value): ?Product
+    public function findOneBySomeField($value): Product
     {
         return $this->createQueryBuilder('p')
             ->andWhere('p.exampleField = :val')
@@ -72,6 +83,7 @@ class ProductRepository extends ServiceEntityRepository
         ;
     }
     */
+
 
     /**
      * @param $price
