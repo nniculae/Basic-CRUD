@@ -8,7 +8,6 @@ use Symfony\Component\HttpFoundation\Response;
 
 class CategoryControllerTest extends WebTestCaseBase
 {
-
     /**
      * @dataProvider getUrlsForRegularUsers
      * @param string $httpMethod
@@ -16,12 +15,10 @@ class CategoryControllerTest extends WebTestCaseBase
      */
     public function testAccessDeniedForRegularUsers(string $httpMethod, string $url): void
     {
-
         $client = static::createClient([], [
             'PHP_AUTH_USER' => 'pisi@zeelandnet.nl',
             'PHP_AUTH_PW' => 'pisoi',
         ]);
-
         $client->request($httpMethod, $url);
         $this->assertSame(Response::HTTP_FORBIDDEN, $client->getResponse()->getStatusCode());
     }
@@ -32,40 +29,33 @@ class CategoryControllerTest extends WebTestCaseBase
         yield ['GET', '/admin/category/1'];
         yield ['GET', '/admin/category/edit/1'];
         yield ['GET', '/admin/category/delete/1'];
-
     }
 
-    public function testAdminBackendHomePage(): void
+    public function testAdminBackendCategoryListPage(): void
     {
         $crawler = $this->client->request('GET', 'admin/category');
         $this->assertSame(Response::HTTP_OK, $this->client->getResponse()->getStatusCode());
-
         $this->assertGreaterThanOrEqual(
             1,
             $crawler->filter('body table#categories tbody tr')->count(),
-            'The backend homepage displays all the available posts.'
+            'The backend category page displays all the available categories.'
         );
     }
 
     public function testAdminNewCategory(): void
     {
         $categoryName = 'Haine';
-
         $crawler = $this->client->request('GET', '/admin/category/new');
         $form = $crawler->selectButton('Create')->form([
             'category[name]' => $categoryName,
-
         ]);
         $this->client->submit($form);
-
         $this->assertSame(Response::HTTP_FOUND, $this->client->getResponse()->getStatusCode());
-
         $cat = $this->client->getContainer()->get('doctrine')->getRepository(Category::class)->findOneBy([
             'name' => $categoryName,
         ]);
         $this->assertNotNull($cat);
         $this->assertSame($categoryName, $cat->getName());
-
         //  commit the changes to database; don't roll back
         //  \DAMA\DoctrineTestBundle\Doctrine\DBAL\StaticDriver::commit();
         //  die;
@@ -74,13 +64,11 @@ class CategoryControllerTest extends WebTestCaseBase
     public function testAdminShowCategory(): void
     {
         $this->client->request('GET', '/admin/category/1');
-
         $this->assertSame(Response::HTTP_OK, $this->client->getResponse()->getStatusCode());
     }
 
     public function testAdminEditCategory(): void
     {
-
         $categoryName = "Haine";
         $crawler = $this->client->request('GET', '/admin/category/edit/1');
         $form = $crawler->selectButton('Update')->form([
@@ -101,5 +89,4 @@ class CategoryControllerTest extends WebTestCaseBase
         $this->assertNull($cat);
         $this->assertTrue($this->client->getResponse()->isRedirect('/admin/category'));
     }
-
 }

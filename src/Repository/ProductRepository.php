@@ -14,6 +14,7 @@ use Symfony\Bridge\Doctrine\RegistryInterface;
  */
 class ProductRepository extends ServiceEntityRepository
 {
+    
     public function findByWithJoin($id):array
     {
 

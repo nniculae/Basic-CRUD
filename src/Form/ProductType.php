@@ -14,6 +14,7 @@ class ProductType extends AbstractType
 {
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
+//        dump($options); die;
         $builder
             ->add('name')
             ->add('price')
@@ -24,7 +25,7 @@ class ProductType extends AbstractType
                     'choice_label' => 'name',
                 ])
             ->add('save', SubmitType::class, [
-                'label' => 'Create',
+                'label' => $options['label'],
                 'attr' => [
                     'class' => 'form-control btn-primary'
                 ],

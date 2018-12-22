@@ -24,24 +24,15 @@ class CategoryController extends AbstractController
     {
         $category = new Category();
         $form = $this->createForm(CategoryType::class, $category, ['label' => 'Create']);
-
         $form->handleRequest($request);
-
         if ($form->isSubmitted() && $form->isValid()) {
-
             $category = $form->getData();
-
             $entityManager->persist($category);
             $entityManager->flush();
-
-
             return $this->redirectToRoute('category-list');
-
-
         }
         return $this->render('category/create.html.twig', [
             'form' => $form->createView(),
-
         ]);
     }
 
@@ -55,7 +46,6 @@ class CategoryController extends AbstractController
         return $this->render('category/read.html.twig', [
             'category' => $category,
         ]);
-
     }
 
     /**
@@ -67,24 +57,17 @@ class CategoryController extends AbstractController
      */
     public function update(Request $request, EntityManagerInterface $entityManager, int $id): Response
     {
-
         $category = $entityManager->getRepository(Category::class)->find($id);
         $form = $this->createForm(CategoryType::class, $category, ['label' => 'Update']);
-
         $form->handleRequest($request);
-
         if ($form->isSubmitted() && $form->isValid()) {
-
             $category = $form->getData();
             $entityManager->persist($category);
             $entityManager->flush();
-
             return $this->redirectToRoute('category-list');
-
         }
         return $this->render('category/update.html.twig', [
             'form' => $form->createView(),
-
         ]);
     }
 
@@ -94,9 +77,8 @@ class CategoryController extends AbstractController
      * @param $id
      * @return \Symfony\Component\HttpFoundation\RedirectResponse
      */
-    public function delete(EntityManagerInterface $entityManager, $id):Response
+    public function delete(EntityManagerInterface $entityManager, $id): Response
     {
-
         $article = $entityManager->getRepository(Category::class)->find($id);
         $entityManager->remove($article);
         $entityManager->flush();
@@ -111,7 +93,6 @@ class CategoryController extends AbstractController
     public function list(EntityManagerInterface $entityManager): Response
     {
         $categories = $entityManager->getRepository(Category::class)->findAll();
-
         return $this->render('category/list.html.twig', [
             'categories' => $categories,
         ]);
