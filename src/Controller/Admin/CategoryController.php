@@ -22,8 +22,7 @@ class CategoryController extends AbstractController
      */
     public function create(Request $request, EntityManagerInterface $entityManager): Response
     {
-        $category = new Category();
-        $form = $this->createForm(CategoryType::class, $category, ['label' => 'Create']);
+        $form = $this->createForm(CategoryType::class, null, ['label' => 'Create']);
         $form->handleRequest($request);
         if ($form->isSubmitted() && $form->isValid()) {
             $category = $form->getData();
@@ -52,12 +51,11 @@ class CategoryController extends AbstractController
      * @Route("/admin/category/edit/{id}", name="category-edit")
      * @param Request $request
      * @param EntityManagerInterface $entityManager
-     * @param int $id
+     * @param Category $category
      * @return \Symfony\Component\HttpFoundation\Response
      */
-    public function update(Request $request, EntityManagerInterface $entityManager, int $id): Response
+    public function update(Request $request, EntityManagerInterface $entityManager, Category $category): Response
     {
-        $category = $entityManager->getRepository(Category::class)->find($id);
         $form = $this->createForm(CategoryType::class, $category, ['label' => 'Update']);
         $form->handleRequest($request);
         if ($form->isSubmitted() && $form->isValid()) {
@@ -74,13 +72,12 @@ class CategoryController extends AbstractController
     /**
      * @Route("/admin/category/delete/{id}", name="category-delete", methods={"GET", "DELETE"})
      * @param EntityManagerInterface $entityManager
-     * @param $id
+     * @param Category $category
      * @return \Symfony\Component\HttpFoundation\RedirectResponse
      */
-    public function delete(EntityManagerInterface $entityManager, $id): Response
+    public function delete(EntityManagerInterface $entityManager, Category $category): Response
     {
-        $article = $entityManager->getRepository(Category::class)->find($id);
-        $entityManager->remove($article);
+        $entityManager->remove($category);
         $entityManager->flush();
         return $this->redirectToRoute('category-list');
     }
