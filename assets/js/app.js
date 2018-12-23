@@ -30,4 +30,10 @@ $(document).ready(function () {
     // $('body').prepend('<h1>' + greet('Magda Barbu') + '</h1>');
     //
     // $('[data-toggle="popover"]').popover();
+    window.setTimeout(function() {
+        $(".alert").fadeTo(500, 0).slideUp(500, function(){
+            $(this).remove();
+        });
+    }, 4000);
+
 });

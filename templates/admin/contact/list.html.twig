@@ -1,0 +1,35 @@
+{% extends 'base.html.twig' %}
+{% block title %}Contacts{% endblock %}
+{% block body %}
+    {% if contacts %}
+        <table id="contacts" class="table table-striped">
+            <caption>Contacts</caption>
+            <thead>
+            <tr>
+                <th>Full Name</th>
+                <th>Adres</th>
+                <th>Postcode</th>
+                <th>Location</th>
+            </tr>
+            </thead>
+            <tbody>
+            {% for contact in contacts %}
+                <tr>
+                    <td>{{ contact.fullName }}</td>
+                    <td>{{ contact.adres }}</td>
+                    <td>{{ contact.postCode }}</td>
+                    <td>{{ contact.location }}</td>
+
+                </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+    {% else %}
+        <h1>No contact to show</h1>
+    {% endif %}
+
+
+{% endblock %}
+
+
+
