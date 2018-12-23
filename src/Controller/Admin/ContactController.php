@@ -22,6 +22,7 @@ class ContactController extends AbstractController
         $form = $this->createForm(ContactType::class);
         // only on post
         $form->handleRequest($request);
+
         if ($form->isSubmitted() && $form->isValid()) {
 
             $objectManager = $this->getDoctrine()->getManager();

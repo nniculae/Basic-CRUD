@@ -10,6 +10,9 @@
                 <th>Adres</th>
                 <th>Postcode</th>
                 <th>Location</th>
+                <th>Country</th>
+                <th>Is Verified</th>
+                <th>Birthday</th>
             </tr>
             </thead>
             <tbody>
@@ -19,6 +22,9 @@
                     <td>{{ contact.adres }}</td>
                     <td>{{ contact.postCode }}</td>
                     <td>{{ contact.location }}</td>
+                    <td>{{ contact.country }}</td>
+                    <td>{{ contact.isVerified ? 'yes' : 'no' }}</td>
+                    <td>{{ contact.birthDate|date("m/d/Y") }}</td>
 
                 </tr>
             {% endfor %}
