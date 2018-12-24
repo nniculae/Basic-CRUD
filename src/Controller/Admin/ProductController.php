@@ -4,6 +4,7 @@ namespace App\Controller\Admin;
 
 use App\Entity\Product;
 use App\Form\ProductType;
+use App\Repository\ProductRepository;
 use Doctrine\ORM\EntityManagerInterface;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
@@ -20,8 +21,7 @@ class ProductController extends AbstractController
      */
     public function create(Request $request, EntityManagerInterface $entityManager): Response
     {
-        $product = new Product();
-        $form = $this->createForm(ProductType::class, $product);
+        $form = $this->createForm(ProductType::class);
         $form->handleRequest($request);
         if ($form->isSubmitted() && $form->isValid()) {
             $product = $form->getData();
@@ -43,7 +43,6 @@ class ProductController extends AbstractController
     public function read(EntityManagerInterface $entityManager, int $id): Response
     {
         $product = $entityManager->getRepository(Product::class)->findByWithJoin($id);
-//        dump($product); die;
         return $this->render('product/read.html.twig', [
             'product' => $product,
         ]);
@@ -53,12 +52,11 @@ class ProductController extends AbstractController
      * @Route("/admin/product/edit/{id}", name="product-edit")
      * @param Request $request
      * @param EntityManagerInterface $entityManager
-     * @param int $id
+     * @param Product $product
      * @return \Symfony\Component\HttpFoundation\Response
      */
-    public function update(Request $request, EntityManagerInterface $entityManager, int $id): Response
+    public function update(Request $request, EntityManagerInterface $entityManager, Product $product): Response
     {
-        $product = $entityManager->getRepository(Product::class)->find($id);
         $form = $this->createForm(ProductType::class, $product, ['label' => 'Update']);
         $form->handleRequest($request);
         if ($form->isSubmitted() && $form->isValid()) {
@@ -75,13 +73,12 @@ class ProductController extends AbstractController
     /**
      * @Route("/admin/product/delete/{id}", name="product-delete", methods={"GET", "DELETE"})
      * @param EntityManagerInterface $entityManager
-     * @param $id
+     * @param Product $product
      * @return \Symfony\Component\HttpFoundation\RedirectResponse
      */
-    public function delete(EntityManagerInterface $entityManager, $id): Response
+    public function delete(EntityManagerInterface $entityManager, Product $product): Response
     {
-        $article = $this->getDoctrine()->getRepository(Product::class)->find($id);
-        $entityManager->remove($article);
+        $entityManager->remove($product);
         $entityManager->flush();
         return $this->redirectToRoute('product-list');
     }
@@ -89,12 +86,12 @@ class ProductController extends AbstractController
     /**
      * Show a list of products
      * @Route("/admin/product", name="product-list")
-     * @param EntityManagerInterface $entityManager
+     * @param ProductRepository $productRepository
      * @return Response
      */
-    public function list(EntityManagerInterface $entityManager): Response
+    public function list(ProductRepository $productRepository): Response
     {
-        $products = $entityManager->getRepository(Product::class)->findAll();
+        $products = $productRepository->findAll();
         if (!$products) {
             throw $this->createNotFoundException(
                 'No product found'
